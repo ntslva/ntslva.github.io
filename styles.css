@@ -137,7 +137,9 @@ nav ul li a:hover {
         max-width: 100%; /* Full width on mobile */
         margin-top: 10px;
     }
-
+    .gallery img{
+        width: 100%
+    }
     header {
         max-width: 100%; /* Header matches image width on mobile */
     }
