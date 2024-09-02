@@ -1,0 +1,100 @@
+<!--
+//  ░▒▓███████▓▒░  ░▒▓██████▓▒░░▒▓████████▓▒░░▒▓████████▓▒░       ░▒▓███████▓▒░░▒▓█▓▒░░▒▓█▓▒░    ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓██████▓▒░  
+//  ░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░  ░▒▓█▓▒░    ░▒▓█▓▒░             ░▒▓█▓▒░       ░▒▓█▓▒░░▒▓█▓▒░    ░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░ 
+//  ░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░  ░▒▓█▓▒░    ░▒▓█▓▒░             ░▒▓█▓▒░       ░▒▓█▓▒░░▒▓█▓▒░     ░▒▓█▓▒▒▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░ 
+//  ░▒▓█▓▒░░▒▓█▓▒░░▒▓████████▓▒░  ░▒▓█▓▒░    ░▒▓██████▓▒░         ░▒▓██████▓▒░ ░▒▓█▓▒░░▒▓█▓▒░     ░▒▓█▓▒▒▓█▓▒░ ░▒▓████████▓▒░ 
+//  ░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░  ░▒▓█▓▒░    ░▒▓█▓▒░                    ░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░      ░▒▓█▓▓█▓▒░  ░▒▓█▓▒░░▒▓█▓▒░ 
+//  ░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░  ░▒▓█▓▒░    ░▒▓█▓▒░                    ░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░      ░▒▓█▓▓█▓▒░  ░▒▓█▓▒░░▒▓█▓▒░ 
+//  ░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░  ░▒▓█▓▒░    ░▒▓████████▓▒░      ░▒▓███████▓▒░ ░▒▓█▓▒░░▒▓████████▓▒░░▒▓██▓▒░   ░▒▓█▓▒░░▒▓█▓▒░ 
+//  All images ©2024 Nathanael Silva, website created by Pamela Liou
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nate Silva | About</title>
+    
+    <link rel="stylesheet" href="styles.css">
+    <style>
+/* Existing styles */
+.about-container {
+    width: 80%;
+    max-width: 1000px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.about-image {
+    max-width: 400px;
+    max-height: 400px;
+    background-color: #ddd;
+    object-fit: cover;
+}
+
+.about-text {
+    max-width: 45%;
+    margin-left: 20px;
+}
+
+.about-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column; /* Stack image and text vertically */
+        align-items: center; /* Center the content */
+    }
+
+    .about-image {
+        width: 100%; /* Image takes full width on mobile */
+        height: auto; /* Maintain aspect ratio */
+        margin-bottom: 20px; /* Add some space below the image */
+    }
+
+    .about-text {
+        max-width: 100%; /* Text takes full width on mobile */
+        margin-left: 0; /* Reset left margin */
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">Nate Silva</a>
+        </div>
+        <nav>
+            <ul>
+                <div class="bodytext">
+                <li><a href="archive.html">Archive</a> | <a href="about.html">About</a></li></div>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="about-container">
+        <img src="images/Pamela_SuperiaWS.jpg" alt="Nate Silva" class="about-image">
+
+        <div class="about-text">
+        <div class="bodytext">
+            <p>
+                Nate Silva is a photographer living in Brooklyn, New York.<br>
+                He has a background in both analog & digital photography in both 35mm & 120 formats. His work spans across various styles including portraiture, landscapes, street photography & abstract compositions.<br>
+                You can reach him either by <u><a href="mailto:natesilva@me.com">email</u></a> or by reaching out on <u><a href="https://instagram.com/natesilva">Instagram</a></u>
+                <br>
+                <br>
+                <font size="2">Website & Photo courtesy of <u><a href="https://instagram.com/pamelaliou">Pamela Liou</a></u>.</font>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

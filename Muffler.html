@@ -1,0 +1,67 @@
+  <!-- All images ©2024 Nathanael Silva, website created by Pamela Liou -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nate Silva</title>
+    
+    <link rel="stylesheet" href="styles.css">
+
+   
+
+
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href ="index.html">Nate Silva</a>
+        </div>
+        <nav>
+            <ul>
+                <div class="bodytext">
+                <li><a href="archive.html">Archive</a> | <a href="about.html">About</a></li>
+            </div>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="gallery">
+        <img id="closeUp" src="images/Muffler.jpg" alt="Muffler">
+    </div>
+     <script>
+
+const mainImg = document.getElementById('closeUp');
+
+
+function applyOrientationClass(imageElement, imageUrl) {
+    const img = new Image();
+    img.src = imageUrl;
+
+    img.onload = function() {
+        // Clear previous orientation classes
+        imageElement.classList.remove('landscape', 'portrait');
+
+        // Apply the appropriate class based on orientation
+        if (img.width > img.height) {
+            imageElement.classList.add('landscape');
+        } else if (img.width < img.height) {
+            imageElement.classList.add('portrait');
+        } else {
+            imageElement.classList.remove('landscape', 'portrait');
+        }
+    };
+
+    img.onerror = function() {
+        console.log('Failed to load image.');
+    };
+}
+
+// Select image on page load
+window.onload = applyOrientationClass(mainImg, "images/Muffler.jpg");    
+</script>
+
+</body>
+</html>
