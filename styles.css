@@ -36,6 +36,8 @@ header {
 
 .bodytext {
     font-family: 'Mission-Gothic-Thin', sans-serif;
+    color: #333333;
+
 
 }
 
@@ -138,7 +140,8 @@ nav ul li a:hover {
         margin-top: 10px;
     }
     .gallery img{
-        width: 100%
+        width: 100%;
+
     }
     header {
         max-width: 100%; /* Header matches image width on mobile */
