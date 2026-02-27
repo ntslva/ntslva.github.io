@@ -128,7 +128,7 @@ nav ul li a:hover {
 @media (orientation: landscape) and (max-width: 1024px) {
     .portrait {
         max-height: none;
-        max-width: 60%;
+        max-width: 100%;
         width: auto;
         height: auto;
     }
