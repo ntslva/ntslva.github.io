@@ -114,12 +114,24 @@ nav ul li a:hover {
 /* Styles for portrait images */
 .portrait {
     max-height: 90vh; /* Ensure image height is within viewport height */
-/*    width: auto; /* Maintain aspect ratio */
-/*    object-fit: cover; /* Cover the area while maintaining aspect ratio */
+    max-width: 100%; /* FIX: prevents squashing by constraining width too */
     width: auto; /* Maintain the original aspect ratio */
     height: auto; /* Automatically adjust height to maintain aspect ratio */
     display: block; /* Ensure the image displays as a block element */
     margin: 0 auto; /* Center the image horizontally */
+}
+
+/* FIX: When device is in landscape orientation (e.g. iPhone rotated),
+   portrait/square images were squashing because the viewport height
+   shrinks dramatically. This constrains the width so the aspect ratio
+   is preserved correctly. */
+@media (orientation: landscape) and (max-width: 1024px) {
+    .portrait {
+        max-height: 85vh;
+        max-width: 60%;
+        width: auto;
+        height: auto;
+    }
 }
 
 @font-face {
