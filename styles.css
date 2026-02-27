@@ -121,10 +121,7 @@ nav ul li a:hover {
     margin: 0 auto; /* Center the image horizontally */
 }
 
-/* FIX: When device is in landscape orientation (e.g. iPhone rotated),
-   portrait/square images were squashing because the viewport height
-   shrinks dramatically. This constrains the width so the aspect ratio
-   is preserved correctly. */
+
 @media (orientation: landscape) and (max-width: 1024px) {
     .portrait {
         max-height: none;
